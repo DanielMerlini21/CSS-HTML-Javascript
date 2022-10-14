@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href = "painter.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="brain.js"></script>
+</head>
+<body>
+    <div class = "show" id =  "start_screen">
+         <p id = "title">Rock Paper Scissors Game</p>
+         <p id = "instruction">click to begin</p>
+    </div>
+    <div class = "hide" id = "play_screen">
+        <div id ="container1">
+            <img id = "player1" src="rock.png" alt="a nice rock" width = 250px height = 130px>
+        </div>
+        <div id ="container2">
+            <img id = "computer" src="rock2.png" alt="a nice rock" width = 250px height = 130px>
+        </div>
+        <div id = "controls">
+            <button id = "rock" onclick = "myMove(this.id)">rock</button>
+            <button id = "paper" onclick = "myMove(this.id)">paper</button>
+            <button id = "scissors" onclick = "myMove(this.id)">scissors</button>
+            <button id = "reset" onclick = "Reset()">reset</button>
+        </div>
+        <div id = "scores">
+            <p class = "data">Player</p>
+            <p class = "data">Draw</p>
+            <p class = "data">Computer</p>
+        </div>
+        <div id = "scores_data">
+            <p id = "player_score" class = "data2">0</p>
+            <p id = "draw_score" class= "data2">0</p>
+            <p id = "computer_score" class = "data2">0</p>
+        </div>
+        <div>
+            <p id = "winner_displayed" class = "bigfont"></p>
+        </div>
+    </div>
+</body>
+</html>

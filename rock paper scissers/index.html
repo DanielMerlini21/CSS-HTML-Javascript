@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel = "stylesheet" href = "painter.css">
+    <script src="brain.js"></script>
+</head>
+<body>
+    <section class = "game hide" id = "game">
+        <div class = "header">
+            <div class = "small-container">
+                <div class = "row">
+                    <button class = "btn text" onclick = "Reset()">reset</button>
+                </div>
+            </div>
+            <div class = "score">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-3">
+                            <h2 class = "title">Player</h2>
+                            <p class =  "score" id = "player_score">0</p>  
+                        </div>
+                        <div class = "col-3">
+                            <h2 class = "title">Draw</h2>
+                            <p class = "score" id = "draw_score">0</p>  
+                        </div>
+                        <div class = "col-3">
+                            <h2 class = "title">Computer</h2>
+                            <p class = "score" id  = "computer_score">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "display_winner">
+            <div class = "container">
+                <h2 class = "title" id = "show_winner">Computer</h2>
+            </div>
+        </div>
+        <div class = "play">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-2">
+                        <img class = "image" id = "player" src = "rock.png"  width = 300px height = 150px>
+                    </div>
+                    <div class = "col-2">
+                        <img class = "image" id = "computer" src = "rock2.png" width = 300px height = 150px>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "controls">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-3">
+                        <button class = "btn text" id = "rock" onclick = "myMove(this.id)">rock</button>   
+                    </div>
+                    <div class = "col-3">
+                        <button class = "btn text" id = "paper" onclick = "myMove(this.id)">paper</button>   
+                    </div>
+                    <div class = "col-3">
+                        <button class = "btn text" id = "scissors" onclick = "myMove(this.id)">scissors</button>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "footer">
+            <div class = "col-1">
+                <img src = "footer.png">
+            </div>
+        </div>
+    </section>
+    <div class = "start_screen" id = "start_screen">
+        <h2 class = "title">Rock Paper Scissors Game</h2>
+        <p class = "text">click the screen to start</p>
+    </div>
+</body>
+</html>
