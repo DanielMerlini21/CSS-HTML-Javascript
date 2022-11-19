@@ -1,0 +1,62 @@
+button {
+	  display: inline-block;
+	  padding: 10px 20px;
+	  font-size: 24px;
+	  cursor: pointer;
+	  text-align: center;
+	  text-decoration: none;
+	  outline: none;
+	  color: white;
+	  background-color: rgb(50, 50, 50);
+	  border: none;
+	  border-radius: 15px;
+	  box-shadow: 0 9px black;
+}
+
+button:hover {background-color: rgb(90, 90 ,90)}
+
+button:active {
+  background-color: rgb(90, 90, 90);
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+}
+
+.wrapper {
+	 position: absolute;
+	 left: 10px;
+	 top: 10px;
+	 width: 500px;
+	 height: 500px;
+	 margin: auto;
+	 display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+     gap: 10px;
+	 padding: 20px;
+	 border-radius: 15px;
+	 background-color : rgb(80, 80, 80);
+}
+
+#screen {
+  grid-column : 1/ -1;
+  padding: 10px;
+  border: 5px solid rgb(195,195,195);
+  margin: 0;
+  background-color:grey;
+}
+
+.control {
+	background-color: rgb(255, 230, 15);
+	color: black;
+	box-shadow: 0 9px rgb(255, 200, 30);
+}
+
+.control:hover{
+	background-color: yellow;
+}
+
+.control:active {
+  background-color: yellow;
+  box-shadow: 0 5px rgb(255, 200, 30);
+  transform: translateY(4px);
+}
